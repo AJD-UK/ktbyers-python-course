@@ -1,4 +1,4 @@
-#!1/usr/bin/python
+#!/usr/bin/python
 
 print 'Input an IP network ' 
 ip = raw_input()
@@ -32,3 +32,8 @@ print ipp1, '\t', as1
 print ipp2, '\t', as2
 print ipp3, '\t', as3
 print ipp4, '\t', as4
+
+cisco_ios = "Cisco IOS Software, C880 Software (C880DATA-UNIVERSALK9-M), Version 15.0(1)M4, RELEASE SOFTWARE (fc1)"
+
+ios_version = cisco_ios.split(', ')
+print ios_version[2].strip('Version ')
